@@ -1,10 +1,10 @@
-
+import { Header } from "./components"
 
 function App() {
 
   return (
     <>
-     <h1>Teste</h1>
+      <Header/>
     </>
   )
 }

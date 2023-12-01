@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'Poppins';
+    src: 
+        local('Poppins'),
+        url(assets/font/Poppins-Regular.ttf) format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Poppins';
+}
+
+html{
+    font-size: 6.25%;
+    height: 500vh;
 }
