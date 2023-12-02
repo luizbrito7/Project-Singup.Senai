@@ -3,7 +3,7 @@ import { flex, primaryColor } from "../style";
 
 
 const SHeader = styled.header`
-    /* height: 60rem;
+    height: 60rem;
     ${flex('row', 'center', 'space-between')}
     position: fixed;
     inset: 0 0 0 0;
@@ -118,7 +118,7 @@ const SHeader = styled.header`
         }
 
         
-    } */
+    }
 `
 
 
