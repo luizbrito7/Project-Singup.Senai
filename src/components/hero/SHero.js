@@ -4,7 +4,7 @@ import { flex } from "../style";
 
 const SHero = styled.section`
     height: 100vh;
-    background: #f00 url(${bg}) no-repeat center center / cover;
+    background: url(${bg}) no-repeat center center / cover;
     ${flex('column', 'center', 'center')};
     color: #fff;
     padding: 0 150rem;
