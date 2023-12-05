@@ -7,12 +7,11 @@ const SHero = styled.section`
     background: #f00 url(${bg}) no-repeat center center / cover;
     ${flex('column', 'center', 'center')};
     color: #fff;
-    padding: 350rem 400rem;
+    padding: 0 150rem;
 
     div{
-        height: 100%;
+        
         width: 100%;
-
         h1{
             width: 630rem;
             line-height: 70rem;
@@ -30,6 +29,7 @@ const SHero = styled.section`
             margin-top: 32rem;
             ${flex('row', 'start', 'flex-start')};
             gap: 6rem;
+            flex-wrap: wrap;
         }
    }
 
@@ -40,11 +40,18 @@ const SHero = styled.section`
             width: auto;
 
             h1, h2{
-            width: auto;
+                width: auto;
+            }
+        }  
+   }
+
+   @media (max-width: 400px) {
+        div{
+            h1{
+            font-size: 36rem;
+            line-height: 36rem;
         }
         }
-        
-        
    }
 
 

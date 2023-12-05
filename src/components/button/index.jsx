@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 
-export default function Button({txt, bg, border, color, hover}) {
+export default function Button({txt, bg, border, color, hover, click}) {
 
     const SButton = styled.button`
         border-radius: 8rem;
@@ -22,6 +22,6 @@ export default function Button({txt, bg, border, color, hover}) {
     `
     
     return (
-        <SButton>{txt}</SButton>
+        <SButton onClick={click}>{txt}</SButton>
     )
 }

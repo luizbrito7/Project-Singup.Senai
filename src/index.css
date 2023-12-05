@@ -28,3 +28,7 @@ html{
 .headerActive{
     background-color: #000;
 }
+
+.modalActive{
+    transform: translateY(0%) !important ;
+}
