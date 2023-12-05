@@ -25,10 +25,10 @@ html{
     height: 500vh;
 }
 
-body{
-    background-color: #4e4e4e;
+.headerActive{
+    background-color: #000;
 }
 
-.headerActive{
-    background-color: #2d2d2d6e;
+.modalActive{
+    transform: translateY(0%) !important ;
 }

@@ -17,7 +17,7 @@ export default function Header(props) {
         // Atualiza o estado com a posição atual de scroll
         setScrollY(window.scrollY);
 
-        if (window.scrollY >= 500) {
+        if (window.scrollY >= 100) {
             setClasseAdicionada(true);
         } else {
             setClasseAdicionada(false);
@@ -46,7 +46,7 @@ export default function Header(props) {
 
     return (
         <SHeader className={classeCSS}>
-            <h1 className={classeCSS}><a href="/">{props.logo}</a></h1>
+            <span className={classeCSS}><a href="/">{props.logo}</a></span>
             <button onClick={click} className={active} aria-label="Menu hamburguer"></button>
 
             <ul className={active}>

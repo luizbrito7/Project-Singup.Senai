@@ -1,7 +1,5 @@
 import { css } from "styled-components"
 
-
-
 export const primaryColor = '#1695DC'; 
 
 export const flex = (direction, align, justify) => css`

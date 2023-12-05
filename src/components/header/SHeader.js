@@ -13,11 +13,12 @@ const SHeader = styled.header`
         font-size: 24rem;
     }
 
-    h1{
+    span{
         font-size: 32rem;
         transition: .2s ease-in-out;
         background: transparent;
         height: 60rem;
+        font-weight: bold;
     }
 
     a{
@@ -58,7 +59,7 @@ const SHeader = styled.header`
     }
 
     ul li a{
-        font-size: 14rem;
+        font-size: 16rem;
     }
 
     ul li a::after{
