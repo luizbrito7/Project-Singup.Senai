@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import SHeader from "./SHeader";
+import SHeader from "./style";
 import data from "./data";
 
 export default function Header(props) {

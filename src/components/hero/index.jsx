@@ -1,4 +1,4 @@
-import SHero from "./SHero"
+import SHero from "./style"
 import { Button, Modal } from '../'
 import { primaryColor } from "../style";
 import { useState } from "react";

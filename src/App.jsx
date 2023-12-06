@@ -1,4 +1,4 @@
-import { Header, Hero } from "./components"
+import { Header, Hero, Albuns } from "./components"
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
       <Header logo='SingUp' />
       <main>
         <Hero/>
+        <Albuns/>
       </main>
     </>
   )
