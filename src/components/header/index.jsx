@@ -17,7 +17,7 @@ export default function Header(props) {
         // Atualiza o estado com a posição atual de scroll
         setScrollY(window.scrollY);
 
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 80) {
             setClasseAdicionada(true);
         } else {
             setClasseAdicionada(false);
