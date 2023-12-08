@@ -5,6 +5,7 @@ import data from "./data";
 export default function Albuns() {
 
     return (
+        
         <SAlbuns>
 
             <div>
@@ -13,10 +14,10 @@ export default function Albuns() {
             </div>
 
 
-            <section>
+            <div>
 
                 {data.map(data => (
-                    <div key={data.id}>
+                    <div key={data.id} id={data.id % 2 == 0 ? 'par' : ''}>
 
                         {data.id % 2 == 0 ?
                             <>
@@ -37,14 +38,13 @@ export default function Albuns() {
                                     <h3>{data.headline}</h3>
                                     <p>{data.subline}</p>
                                 </div>
-
                             </>
                         }
 
                     </div>
                 ))}
 
-            </section>
+            </div>
 
         </SAlbuns>
     )

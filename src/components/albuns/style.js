@@ -3,9 +3,10 @@ import { flex, primaryColor, marginTop } from "../style";
 
 const SAlbuns = styled.section`
 
+    margin-top: ${marginTop}rem;
 
+    // div título
     div{
-        margin-top: ${marginTop}rem;
         ${flex('column', 'center', 'center')}
         text-align: center;
 
@@ -13,6 +14,7 @@ const SAlbuns = styled.section`
             color: ${primaryColor};
             font-size:64rem;
             line-height: 64rem;
+            font-weight: 600;
             
             span{
                 font-size:64rem;
@@ -26,33 +28,41 @@ const SAlbuns = styled.section`
         }
     }
 
-    section{
 
+
+    div{
         ${flex('column', 'center', 'center')};
         gap: 32rem;
         margin-top: 64rem;
-        
+
+        #par{
+            flex-wrap: wrap-reverse;
+        }
+
         div{
             ${flex('row', 'center', 'center')};
-            gap: 48rem;
             flex-wrap: wrap;
+            width: 100%;
+            padding: 10rem;
+
             
             img{
                 box-shadow: -5px -11px 56px -25px rgba(0,0,0,0.75);
             }
+
+            
             div{
                 ${flex('column', 'flex-start', 'center')};
                 gap: 12rem;
-                
+                width: auto;
                 
                 span{
                     color: ${primaryColor};
                     position: relative;
                 }
-
+                
                 span::after{
                     content: '';
-                    background-color: red;
                     width: 170rem;
                     height: 1rem;
                     position: absolute;
@@ -75,6 +85,32 @@ const SAlbuns = styled.section`
                 }
             }
 
+        }
+    }
+
+    @media (max-width: 650px) {
+
+        div{
+
+            div{
+                img{
+                    width: 70%;
+                    height: 70%;
+                }
+
+                div{
+                    ${flex('column', 'center', 'center')};
+                    padding: 0 16rem;
+                    
+                    span::after{
+                        width: 0rem;
+                    }
+                    p{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 

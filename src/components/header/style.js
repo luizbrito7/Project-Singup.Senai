@@ -8,6 +8,7 @@ const SHeader = styled.header`
     position: fixed;
     inset: 0 0 0 0;
     padding-inline: 70rem;
+    z-index: 2;
 
     .headerActive{
         font-size: 24rem;
@@ -34,7 +35,7 @@ const SHeader = styled.header`
         border-top: 3rem solid #fff;
         cursor: pointer;
         display: none;
-        z-index: 1;
+        z-index: 2;
         position: relative;        
     }
     
