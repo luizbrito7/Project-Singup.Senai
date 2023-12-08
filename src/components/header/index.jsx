@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import SHeader from "./SHeader";
+import SHeader from "./style";
 import data from "./data";
 
-export default function Header(props) {
+export default function Header({ logo }) {
 
     // MENU 
     const [classe, setClasse] = useState(false);
@@ -46,7 +46,7 @@ export default function Header(props) {
 
     return (
         <SHeader className={classeCSS}>
-            <span className={classeCSS}><a href="/">{props.logo}</a></span>
+            <span className={classeCSS}><a href="/">{logo}</a></span>
             <button onClick={click} className={active} aria-label="Menu hamburguer"></button>
 
             <ul className={active}>

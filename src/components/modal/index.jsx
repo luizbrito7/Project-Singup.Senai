@@ -1,4 +1,4 @@
-import SModal from "./SModal"
+import SModal from "./style"
 
 export default function Modal({ isOpen, onClose }) {
 
