@@ -3,6 +3,7 @@ import Hero from "./hero";
 import Button from "./button";
 import Modal from "./modal";
 import Albuns from "./albuns/Albuns";
+import Artists from "./artists/Artists";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Hero,
     Button,
     Modal,
-    Albuns
+    Albuns,
+    Artists
 }
