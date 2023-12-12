@@ -3,7 +3,7 @@ import { flex, primaryColor, marginTop } from "../style";
 
 const SAlbuns = styled.section`
 
-    margin-top: ${marginTop}rem;
+    margin: ${marginTop}rem 0;
 
     // div título
     div{
