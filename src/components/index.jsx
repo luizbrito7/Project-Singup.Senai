@@ -4,6 +4,7 @@ import Button from "./button";
 import Modal from "./modal";
 import Albuns from "./albuns/Albuns";
 import Artists from "./artists/Artists";
+import Gallery from "./gallery";
 
 
 export {
@@ -12,5 +13,6 @@ export {
     Button,
     Modal,
     Albuns,
-    Artists
+    Artists,
+    Gallery
 }
