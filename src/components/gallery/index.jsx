@@ -35,31 +35,31 @@ export default function Gallery() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={img.gallery01} />
+          <img src={img.galleryOne} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery02} />
+          <img src={img.galleryTwo} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery03} />
+          <img src={img.galleryThree} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery04} />
+          <img src={img.galleryFour} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery05} />
+          <img src={img.galleryFive} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery06}/>
+          <img src={img.gallerySix}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery07}/>
+          <img src={img.gallerySeven}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery08}/>
+          <img src={img.galleryEight}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallery09}/>
+          <img src={img.galleryNine}/>
         </SwiperSlide>
       </Swiper>
 
