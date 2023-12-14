@@ -66,7 +66,6 @@ const SArtists = styled.section`
 
     @media (max-width: 450px) {
 
-        background: aqua;
         padding: 0 12rem;
 
         img{
