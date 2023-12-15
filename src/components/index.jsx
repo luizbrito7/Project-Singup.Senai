@@ -6,6 +6,7 @@ import Albuns from "./albuns/Albuns";
 import Artists from "./artists/Artists";
 import Gallery from "./gallery";
 import Singles from "./singles";
+import News from "./news";
 
 
 export {
@@ -16,5 +17,6 @@ export {
     Albuns,
     Artists,
     Gallery,
-    Singles
+    Singles,
+    News
 }

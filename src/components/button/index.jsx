@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 
-export default function Button({txt, bg, border, color, hover, click}) {
+export default function Button({txt, bg, border, color, hover, colorHover, click}) {
 
     const SButton = styled.button`
         border-radius: 8rem;
@@ -16,6 +16,8 @@ export default function Button({txt, bg, border, color, hover, click}) {
         
         &:hover{
             background-color: ${hover};
+            color: ${colorHover};
+
         }
 
 

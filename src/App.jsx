@@ -1,4 +1,4 @@
-import { Header, Hero, Albuns, Artists, Gallery, Singles } from "./components"
+import { Header, Hero, Albuns, Artists, Gallery, Singles, News } from "./components"
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Artists/>
         <Gallery/>
         <Singles/>
-
+        <News/>
       </main>
     </>
   )
