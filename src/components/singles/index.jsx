@@ -8,7 +8,7 @@ export default function Singles() {
         <SSingles>
 
             <h2>Singles marcantes</h2>
-            <p>A presença da música tem o poder de aprimorar todos os aspectos da vida, sendo uma linguagem universal capaz de superar diversas barreiras culturais.</p>
+            <span>A presença da música tem o poder de aprimorar todos os aspectos da vida, sendo uma linguagem universal capaz de superar diversas barreiras culturais.</span>
 
             <div>
                 {data.map(data => (

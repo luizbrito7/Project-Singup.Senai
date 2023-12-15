@@ -10,16 +10,20 @@ const SSingles = styled.section`
 
     ${flex('column', 'center', 'center')}
 
-    h2, h3, p{
+    h2, h3, span, p{
         text-align: center;
         color: #fff;
+    }
+
+    span{
+        width: 613rem;
     }
 
     h2{
         font-size: 50rem;
     }
 
-    p, h3{
+    span, h3, p{
         font-size: 18rem;   
         display: block;
     }
@@ -30,12 +34,20 @@ const SSingles = styled.section`
         ${flex('row', 'center', 'center')}
         gap: 32rem;
         flex-wrap: wrap;
+        padding: 0 12rem;
         
         div{
         
             ${flex('column', 'center', 'center')}
             gap: 8rem;
 
+        }
+    }
+
+    @media (max-width: 750px) {
+        span, h2{  
+            padding: 0 12rem;
+            width: auto;
         }
     }
 
