@@ -10,6 +10,7 @@ const data = [
     {id: 2, img: oldTownRoad, artist: 'Lil Nas X', single: 'Old Town Road'},
     {id: 3, img: godsPlan, artist: 'Drake', single: 'God’s Plan '},
     {id: 4, img: butter, artist: 'Butter', single: 'BTS'},
+    {id: 5, img: shapeOfYou, artist: 'Shape of You', single: 'Ed Sheeran'},
 ]
 
 
