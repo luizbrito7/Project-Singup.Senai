@@ -14,7 +14,7 @@ export default function Gallery() {
     <SGallery>
 
       
-      <h1>Galeria</h1>
+      <h2>Galeria</h2>
       <p>A música é a maneira de expressar suas emoções e aquilo que você gostou mais na vida – é uma das partes mais importantes de nossas vidas.</p>
       
 

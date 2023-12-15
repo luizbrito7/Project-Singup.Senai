@@ -19,4 +19,4 @@ export {
     gallerySeven,
     galleryEight,
     galleryNine
-}
+}   
