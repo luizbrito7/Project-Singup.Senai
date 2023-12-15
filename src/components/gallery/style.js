@@ -5,11 +5,11 @@ const SGallery = styled.section`
     margin-top: ${marginTop}rem;
     ${flex('column', 'center', 'center')}
 
-    h1, p{
+    h2, p{
         text-align: center;
     }
 
-    h1{
+    h2{
         font-size: 50rem;
     }
 

@@ -1,15 +1,21 @@
-import { Header, Hero, Albuns, Artists, Gallery } from "./components"
+import { Header, Hero, Albuns, Artists, Gallery, Singles } from "./components"
+
 
 function App() {
 
   return (
     <>
-      <Header logo='SingUp' />
+    
+      <Header logo='SingUp'/>
+
       <main>
+
         <Hero/>
         <Albuns/>
         <Artists/>
         <Gallery/>
+        <Singles/>
+
       </main>
     </>
   )
