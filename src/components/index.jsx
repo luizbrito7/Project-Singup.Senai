@@ -7,6 +7,7 @@ import Artists from "./artists/Artists";
 import Gallery from "./gallery";
 import Singles from "./singles";
 import News from "./news";
+import Footer from "./footer";
 
 
 export {
@@ -18,5 +19,6 @@ export {
     Artists,
     Gallery,
     Singles,
-    News
+    News,
+    Footer
 }

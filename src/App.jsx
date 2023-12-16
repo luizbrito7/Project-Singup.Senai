@@ -1,4 +1,4 @@
-import { Header, Hero, Albuns, Artists, Gallery, Singles, News } from "./components"
+import { Header, Hero, Albuns, Artists, Gallery, Singles, News, Footer } from "./components"
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
       <Header logo='SingUp'/>
 
       <main>
-
         <Hero/>
         <Albuns/>
         <Artists/>
@@ -17,6 +16,8 @@ function App() {
         <Singles/>
         <News/>
       </main>
+
+      <Footer/>
     </>
   )
 }
