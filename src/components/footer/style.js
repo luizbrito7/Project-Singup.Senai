@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { flex, primaryColor } from './../style';
+import { flex, primaryColor } from '../style';
 
 const SFooter = styled.footer`
     margin-top: 128rem;

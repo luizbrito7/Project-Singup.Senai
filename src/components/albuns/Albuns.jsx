@@ -1,8 +1,16 @@
-
 import SAlbuns from "./style";
 import data from "./data";
+import { useEffect } from "react";
+
+//  LIB DE ANIMAÇÕES 
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 export default function Albuns() {
+    
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    }, [])
 
     return (
         
@@ -17,7 +25,7 @@ export default function Albuns() {
             <div>
 
                 {data.map(data => (
-                    <div key={data.id} id={data.id % 2 == 0 ? 'par' : ''}>
+                    <div key={data.id} id={data.id % 2 == 0 ? 'par' : ''} data-aos='fade-right'>
 
                         {data.id % 2 == 0 ?
                             <>
