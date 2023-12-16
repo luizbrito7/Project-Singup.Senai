@@ -14,6 +14,8 @@ const SFooter = styled.footer`
         flex-wrap: wrap;
         width: 100%;
 
+     
+
 
         span{
             font-size: 32rem;
@@ -78,6 +80,16 @@ const SFooter = styled.footer`
 
     @media (max-width: 1100px) {
         padding: 12rem 50rem;
+
+        div{
+            ${flex('row', 'center', 'center')};
+            
+            ul{
+                ${flex('row', 'center', 'center')};
+                margin-bottom: 12rem;
+                
+            }
+        }
     }
     `
 
