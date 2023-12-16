@@ -31,7 +31,7 @@ const SHero = styled.section`
             gap: 6rem;
             flex-wrap: wrap;
         }
-   }
+    }
 
    @media (max-width: 1100px) {
         padding: 35rem 40rem;
@@ -54,6 +54,8 @@ const SHero = styled.section`
         }
    }
 
+
+    
 
 `
 

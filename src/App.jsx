@@ -15,6 +15,8 @@ function App() {
         <Gallery/>
         <Singles/>
         <News/>
+
+        <a className="toTop" href="#top">➤</a>
       </main>
 
       <Footer/>

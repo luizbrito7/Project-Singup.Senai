@@ -20,7 +20,7 @@ export default function Hero() {
 
     return (
         <>
-            <SHero>
+            <SHero id="top">
                 <div>
                     <h1>Ouça novo álbum e músicas do Post Malone</h1>
                     <h2>Ouça mais de 80 milhões de músicas, lançamentos exclusivos e vídeos musicais.</h2>
@@ -30,6 +30,9 @@ export default function Hero() {
                         <Button bg={primaryColor} border={primaryColor} txt='Sobre' color='#fff' hover='#3cb7ff' />
                     </div>
                 </div>
+
+                
+
             </SHero>
             <Modal isOpen={modalOpen} onClose={handleCloseModal}/>
         </> 
