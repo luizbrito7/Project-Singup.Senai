@@ -1,9 +1,21 @@
 import SSingles from './styles'
 import data from './data'
 
-export default function Singles() {
-    return (
+import { useEffect } from 'react';
 
+//  LIB DE ANIMAÇÕES 
+import AOS from "aos";
+import 'aos/dist/aos.css'
+
+
+export default function Singles() {
+
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    }, [])
+
+    return (
+        
 
         <SSingles>
 
@@ -12,7 +24,7 @@ export default function Singles() {
 
             <div>
                 {data.map(data => (
-                    <div key={data.id}>
+                    <div key={data.id} data-aos="fade-up">
                         <img src={data.img} alt={`Imagem ilustrativa do single ${data.single}`} />
                         <div>
                             <h3>{data.single}</h3>
