@@ -1,6 +1,9 @@
 import SFooter from "./style"
 import data from '../header/data'
 
+
+import { Link } from "react-router-dom"
+
 import { facebook, instagram, twitter } from '../../assets/redes'
 
 export default function Footer() {
@@ -12,7 +15,7 @@ export default function Footer() {
                 <ul>
                     {data.map(data => (
                         <li key={data.id}>
-                            <a href={data.link}>{data.text}</a>
+                            <Link to={data.link}>{data.text}</Link>
                         </li>
                     ))}
                 </ul>
