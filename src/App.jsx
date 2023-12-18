@@ -1,24 +1,14 @@
-import { Header, Hero, Albuns, Artists, Gallery, Singles, News, Footer } from "./components"
-
+import { Header, Footer } from "./components"
+import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
     <>
-    
       <Header logo='SingUp'/>
+      <Outlet/>
 
-      <main>
-        <Hero/>
-        <Albuns/>
-        <Artists/>
-        <Gallery/>
-        <Singles/>
-        <News/>
-
-        <a className="toTop" href="#top">➤</a>
-      </main>
-
+      <a className="toTop" href="#top">➤</a>
       <Footer/>
     </>
   )

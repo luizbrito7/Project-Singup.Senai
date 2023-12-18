@@ -23,11 +23,9 @@
 
 html {
     font-size: 6.25%;
-    height: 500vh;
-
 }
 
-.headerActive {
+.headerActive, .fundo{
     background-color: #000;
 }
 
@@ -46,4 +44,6 @@ html {
     padding: 5rem;
     cursor: pointer;
     border-radius: 5rem;
+    z-index: 5;
 }
+

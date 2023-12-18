@@ -2,7 +2,13 @@ import { useState, useEffect } from "react";
 import SHeader from "./style";
 import data from "./data";
 
+
+import { useLocation, Link } from 'react-router-dom';
+
 export default function Header({ logo }) {
+
+    const location = useLocation();
+    const condicao = location.pathname === '/';
 
     // MENU 
     const [classe, setClasse] = useState(false);
@@ -45,14 +51,14 @@ export default function Header({ logo }) {
 
 
     return (
-        <SHeader className={classeCSS}>
-            <span className={classeCSS}><a href="/">{logo}</a></span>
+        <SHeader className={`${classeCSS} ${condicao ? '' : 'fundo'}`}>
+            <span className={classeCSS}><Link to="/">{logo}</Link></span>
             <button onClick={click} className={active} aria-label="Menu hamburguer"></button>
 
             <ul className={active}>
                 {data.map(data => (
                     <li key={data.id}>
-                        <a href={data.link}>{data.text}</a>
+                        <Link to={data.link} onClick={click}>{data.text}</Link>
                     </li>
                 ))}
             </ul>

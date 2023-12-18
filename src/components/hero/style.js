@@ -9,6 +9,7 @@ const SHero = styled.section`
     color: #fff;
     padding: 0 150rem;
 
+
     div{
         
         width: 100%;
