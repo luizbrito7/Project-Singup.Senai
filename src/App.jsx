@@ -7,6 +7,8 @@ function App() {
     <>
       <Header logo='SingUp'/>
       <Outlet/>
+
+      <a className="toTop" href="#top">➤</a>
       <Footer/>
     </>
   )
