@@ -44,5 +44,6 @@ html {
     padding: 5rem;
     cursor: pointer;
     border-radius: 5rem;
+    z-index: 5;
 }
 
