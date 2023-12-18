@@ -30,12 +30,12 @@ export default function Hero() {
         <>
             <SHero id="top">
                 <div>
-                    <h1 data-aos="fade-up">Ouça novo álbum e músicas do Post Malone</h1>
-                    <h2 data-aos="fade-up">Ouça mais de 80 milhões de músicas, lançamentos exclusivos e vídeos musicais.</h2>
+                    <h1 data-aos="fade-right">Ouça novo álbum e músicas do Post Malone</h1>
+                    <h2 data-aos="fade-right">Ouça mais de 80 milhões de músicas, lançamentos exclusivos e vídeos musicais.</h2>
 
                     <div>
                         <Button bg='#595959' border='#595959' txt='Ouça novo Album!' color='#fff' hover='#747474' click={handleOpenModal}/>
-                        <Button bg={primaryColor} border={primaryColor} txt='Sobre' color='#fff' hover='#3cb7ff' />
+                        <Button bg={primaryColor} border={primaryColor} txt='Sobre' color='#fff' hover='#3cb7ff'/>
                     </div>
                 </div>
 
