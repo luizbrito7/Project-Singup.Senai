@@ -58,7 +58,7 @@ export default function Header({ logo }) {
             <ul className={active}>
                 {data.map(data => (
                     <li key={data.id}>
-                        <Link to={data.link}>{data.text}</Link>
+                        <Link to={data.link} onClick={click}>{data.text}</Link>
                     </li>
                 ))}
             </ul>
