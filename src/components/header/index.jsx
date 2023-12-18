@@ -52,7 +52,7 @@ export default function Header({ logo }) {
 
     return (
         <SHeader className={`${classeCSS} ${condicao ? '' : 'fundo'}`}>
-            <span className={classeCSS}><a href="/">{logo}</a></span>
+            <span className={classeCSS}><Link to="/">{logo}</Link></span>
             <button onClick={click} className={active} aria-label="Menu hamburguer"></button>
 
             <ul className={active}>
