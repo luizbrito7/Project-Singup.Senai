@@ -1,7 +1,24 @@
-
+import SGallery from "./style"
 
 export default function Gallery() {
     return(
-        <h1>PÁGINA DE GALERIA DE FOTOS</h1>
+        <SGallery>
+
+            <div>
+                <div className="row">
+                    <div className="img img-one"></div>
+                    <div className="img img-two"></div>
+                </div>
+
+                <div className='row'>
+                    <div className="img"></div>
+                </div>
+                
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
+            </div>
+
+        </SGallery>
     )
-}
+}   
