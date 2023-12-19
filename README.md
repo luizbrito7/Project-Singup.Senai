@@ -8,7 +8,7 @@
 
 ## 📚 Qual a finalidade do projeto?
 
-A plataforma SingUp foi meticulosamente concebida como parte integrante do curso de **Web Design - Frontend** oferecido pelo SENAI Suiço Brasileiro. Seu desenvolvimento foi orientado pelo objetivo de aplicar de maneira prática os conceitos e conhecimentos adquiridos durante as instruções ministradas pelo professor  <a href="https://www.linkedin.com/in/lucascorreaa/">Lucas Correa</a>.
+A plataforma SingUp foi meticulosamente concebida como parte integrante do curso de **Web Design - Frontend** oferecido pelo SENAI Suiço Brasileiro. Seu desenvolvimento foi orientado pelo objetivo de aplicar de maneira prática os conceitos e conhecimentos adquiridos durante as aulas ministradas pelo professor  <a href="https://www.linkedin.com/in/lucascorreaa/">Lucas Correa</a>.
 
 ---
 
