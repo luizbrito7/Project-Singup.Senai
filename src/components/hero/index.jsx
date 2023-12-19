@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
-export default function Hero({headline, subheadline, bg, buttons}) {
+export default function Hero({headline, subheadline, bg, button}) {
 
     useEffect(() => {
         AOS.init({duration: 1000})
@@ -36,10 +36,9 @@ export default function Hero({headline, subheadline, bg, buttons}) {
                     <h1 data-aos="fade-right">{headline}</h1>
                     <h2 data-aos="fade-right">{subheadline}</h2>
 
-                    {buttons ? 
+                    {button ? 
                         <div>
                             <Button bg='#595959' border='#595959' txt='Ouça novo Album!' color='#fff' hover='#747474' click={handleOpenModal}/>
-                            <Button bg={primaryColor} border={primaryColor} txt='Sobre' color='#fff' hover='#3cb7ff'/>
                         </div>
                     
                         : ''

@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <main>
-        <Hero headline='Novo albúm do Post Malone disponível!' subheadline='Joga bola dança e joga de lado' bg={bg} buttons={true}/>
+        <Hero headline='Novo albúm do Post Malone disponível!' subheadline='Uma mistura hip hop, rock, country e pop no seu novo álbum inédito.' bg={bg} button={true}/>
         <Albuns/>
         <Artists/>
         <Gallery/>
