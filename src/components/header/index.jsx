@@ -8,7 +8,7 @@ import { useLocation, Link } from 'react-router-dom';
 export default function Header({ logo }) {
 
     const location = useLocation();
-    const condicao = location.pathname === '/';
+    const condition = location.pathname === '/' ||  location.pathname === '/gallery';
 
     // MENU 
     const [classe, setClasse] = useState(false);
@@ -51,7 +51,7 @@ export default function Header({ logo }) {
 
 
     return (
-        <SHeader className={`${classeCSS} ${condicao ? '' : 'fundo'}`}>
+        <SHeader className={`${classeCSS} ${condition ? '' : 'fundo'}`}>
             <span className={classeCSS}><Link to="/">{logo}</Link></span>
             <button onClick={click} className={active} aria-label="Menu hamburguer"></button>
 

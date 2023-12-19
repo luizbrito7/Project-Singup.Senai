@@ -25,9 +25,18 @@ export default function Footer() {
                     <a href="#"><img src={facebook} alt="Ícone do facebook" /></a>
                     <a href="#"><img src={twitter} alt="Ícone do twitter" /></a>
                 </nav>
+                
             </div>
 
-            <p>© SingUp. Todos os direitos reservados 2023.</p>
+           
+              
+          <div>
+             
+                <p>© SingUp. Todos os direitos reservados, ano de 2023. </p>
+          </div>
+          
+              
+        
     
 
         </SFooter>
