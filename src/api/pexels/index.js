@@ -3,6 +3,8 @@
 
 const fetchImages = async () => {
 
+
+  
     const query = 'show';
     const apiKey = JSON.stringify(import.meta.env.VITE_KEY_PEXELS).replace(/"/g, '');
 
