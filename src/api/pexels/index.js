@@ -3,9 +3,9 @@
 
 const fetchImages = async () => {
 
-    const query = 'music';
-    const apiKey = JSON.stringify(import.meta.env.VITE_KEY_PEXELS);
-    console.log(apiKey);
+    const query = 'show';
+    const apiKey = JSON.stringify(import.meta.env.VITE_KEY_PEXELS).replace(/"/g, '');
+
     try {
       const response = await fetch(
         `https://api.pexels.com/v1/search?query=${query}`,
@@ -22,6 +22,7 @@ const fetchImages = async () => {
 
   
       const data = await response.json();
+      console.log(data);
       return data.photos;
 
     } catch (error) {
@@ -30,7 +31,8 @@ const fetchImages = async () => {
     }
   };
   
-  export { fetchImages };
+
+export { fetchImages };
 
 
 

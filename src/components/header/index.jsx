@@ -8,7 +8,7 @@ import { useLocation, Link } from 'react-router-dom';
 export default function Header({ logo }) {
 
     const location = useLocation();
-    const condicao = location.pathname === '/';
+    const condicao = location.pathname === '/' ||  location.pathname === '/gallery';
 
     // MENU 
     const [classe, setClasse] = useState(false);

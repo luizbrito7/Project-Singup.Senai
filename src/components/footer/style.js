@@ -4,17 +4,16 @@ import { flex, primaryColor } from '../style';
 
 const SFooter = styled.footer`
     margin-top: 128rem;
-    padding: 12rem 250rem;
+    padding: 12rem 70rem;
     ${flex('column', 'center', 'center')};
-    gap: 32rem;
+    gap: 12rem;
     
     
     div{
         ${flex('row', 'center', 'space-between')};
         flex-wrap: wrap;
         width: 100%;
-
-     
+        gap: 32rem;
 
 
         span{
@@ -32,11 +31,13 @@ const SFooter = styled.footer`
         }
 
         ul{
-            ${flex('row', 'center', 'flex-start')};
+            ${flex('row', 'center', 'center')};
             gap: 12rem;
             list-style: none;
             flex-wrap: wrap;
-            
+
+        
+
             li{
                 a{
                     font-size: 16rem;
@@ -65,32 +66,42 @@ const SFooter = styled.footer`
 
         nav{
             ${flex('row', 'center', 'center')};
-            gap: 12rem;
+            gap: 8rem;
+
+            img{
+                width: 24px;
+                height: 24px;  
+            }
         }
         
 
     }
 
+ 
+
     p{
-        font-size: 14rem;
+        font-size: 12rem;
+        text-align: left;
+        padding: 12rem 0;
+        border-top: 1px solid #D9D9D9;
+        width: 100%;
+    }
+
+    @media (max-width: 850px ) {
+            
+        div{
+            ${flex('column', 'center', 'center')};
+            
+            
+        }
+
        
-      
+        p{
+            text-align: center;
+        }
+ 
     }
     
-
-    @media (max-width: 1100px) {
-        padding: 12rem 50rem;
-
-        div{
-            ${flex('row', 'center', 'center')};
-            
-            ul{
-                ${flex('row', 'center', 'center')};
-                margin-bottom: 12rem;
-                
-            }
-        }
-    }
     `
 
 

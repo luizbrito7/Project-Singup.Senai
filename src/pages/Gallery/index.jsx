@@ -1,7 +1,9 @@
 import SGallery from "./style"
 import { fetchImages } from "../../api/pexels";
 import { useEffect, useState } from "react"
+import { Hero } from './../../components';
 
+import bg from '../../assets/png/hero-gallery-bg.png'
 
 export default function Gallery() {
     const [images, setImages] = useState([]);
@@ -24,26 +26,32 @@ export default function Gallery() {
 
 
 
-
+    
     return (
-        <SGallery>
+        <main>
+        
+            <Hero bg={bg} buttons={false} headline='Ritmos Capturados em Instantes Fotográficos.' subheadline='Uma Odisseia Visual pelos Ritmos e Melodias que Transformam o Mundo Musical.'/>
+            
+            <SGallery>
+                <div>
+                    <h1>Galeria <span> de fotos</span></h1>
+                    <span>Momentos marcantes em shows e festivais </span>
+                </div>
 
-            <div>
-                <h1>Galeria <span> de fotos</span></h1>
-                <span>Momentos marcantes em shows e festivais </span>
-            </div>
-
-            <div>
-                <h2>Lista de Imagens</h2>
-                <ul>
+                <div className="box-img" >
                     {images.map((image) => (
-                        <li key={image.id}>
-                            <img src={image.src.medium} alt={image.photographer} />
-                        </li>
+                        <div key={image.id} >
+                            <img src={image.src.medium} alt={image.src.alt} />
+                            <div>
+                                <h3>{image.photographer}</h3>
+                                <p>Fotógrafo</p>
+                            </div>
+                        </div>
                     ))}
-                </ul>
-            </div>
+                </div>
 
-        </SGallery>
+            </SGallery>
+
+        </main>
     )
 }   
