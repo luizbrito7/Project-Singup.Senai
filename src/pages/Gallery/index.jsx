@@ -1,22 +1,47 @@
 import SGallery from "./style"
+import { fetchImages } from "../../api/pexels";
+import { useEffect, useState } from "react"
+
 
 export default function Gallery() {
-    return(
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+
+        const fetchData = async () => {
+            try {
+                const data = await fetchImages();
+                setImages(data);
+
+            } catch (error) {
+                console.error('Erro na solicitação:', error.message);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
+
+
+
+    return (
         <SGallery>
 
             <div>
-                <div className="row">
-                    <div className="img img-one"></div>
-                    <div className="img img-two"></div>
-                </div>
+                <h1>Galeria <span> de fotos</span></h1>
+                <span>Momentos marcantes em shows e festivais </span>
+            </div>
 
-                <div className='row'>
-                    <div className="img"></div>
-                </div>
-                
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
+            <div>
+                <h2>Lista de Imagens</h2>
+                <ul>
+                    {images.map((image) => (
+                        <li key={image.id}>
+                            <img src={image.src.medium} alt={image.photographer} />
+                        </li>
+                    ))}
+                </ul>
             </div>
 
         </SGallery>

@@ -1,20 +1,35 @@
 import styled from "styled-components";
-import { flex, marginTop } from '../../components/style'
+import { flex, marginTop, primaryColor } from '../../components/style'
 
 
 const SGallery = styled.section`
-margin-top: ${marginTop}rem;
-    ${flex('column', 'center', 'center')}
-    align-self: center;
+    margin-top: calc(${marginTop}rem + 100rem);
+    height: 100vh;
 
-    .img{
-        background-color: aqua;
-        height: 500rem;
+
+    // div título
+    div{
+        ${flex('column', 'center', 'center')}
+        text-align: center;
+
+        h1{
+            color: ${primaryColor};
+            font-size:64rem;
+            line-height: 64rem;
+            font-weight: 600;
+            
+            span{
+                font-size:64rem;
+                color: #373737;
+
+            }
+        }
+        
+        span{
+            font-size: 18rem;
+        }
     }
 
-    .img01{
-        width: 440px;
-    }
 `
 
 
