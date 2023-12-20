@@ -1,12 +1,18 @@
-
+import { Header, Footer } from "./components";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-     <h1>Teste</h1>
+      <Header logo="SingUp" />
+      <Outlet />
+
+      <a className="toTop" href="#top">
+        ➤
+      </a>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
