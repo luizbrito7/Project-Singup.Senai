@@ -1,49 +1,49 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('assets/font/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Poppins";
+  src: url("assets/font/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('assets/font/Poppins-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Poppins";
+  src: url("assets/font/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins';
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
 }
 
 html {
-    font-size: 6.25%;
+  font-size: 6.25%;
 }
 
-.headerActive, .fundo{
-    background-color: #000;
+.headerActive,
+.fundo {
+  background-color: #000;
 }
 
 .modalActive {
-    transform: translateY(0%) !important;
+  transform: translateY(0%) !important;
 }
 
 .toTop {
-    background-color: #1695DC;
-    color: #fff;
-    font-size: 18rem;
-    transform: rotate(-90deg);
-    position: fixed;
-    bottom: 16rem;
-    right: 16rem;
-    padding: 5rem;
-    cursor: pointer;
-    border-radius: 5rem;
-    z-index: 5;
+  background-color: #1695dc;
+  color: #fff;
+  font-size: 18rem;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 16rem;
+  right: 16rem;
+  padding: 5rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  z-index: 5;
 }
-

@@ -5,8 +5,17 @@ import { Hero } from './../../components';
 
 import bg from '../../assets/png/hero-gallery-bg.png'
 
+//  LIB DE ANIMAÇÕES 
+import AOS from "aos";
+import 'aos/dist/aos.css'
+
+
 export default function Gallery() {
     const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    }, [])
 
     useEffect(() => {
 
@@ -40,7 +49,7 @@ export default function Gallery() {
 
                 <div className="box-img" >
                     {images.map((image) => (
-                        <div key={image.id} >
+                        <div key={image.id}  data-aos="fade-up">
                             <img src={image.src.medium} alt={image.src.alt} />
                             <div>
                                 <h3>{image.photographer}</h3>

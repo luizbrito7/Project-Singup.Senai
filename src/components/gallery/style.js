@@ -1,52 +1,48 @@
 import styled from "styled-components";
 import { marginTop, flex } from "../style";
 const SGallery = styled.section`
-    
-    margin-top: ${marginTop}rem;
-    ${flex('column', 'center', 'center')}
+  margin-top: ${marginTop}rem;
+  ${flex("column", "center", "center")}
 
-    h2, p{
-        text-align: center;
-    }
+  h2, p {
+    text-align: center;
+  }
 
-    h2{
-        font-size: 50rem;
-    }
+  h2 {
+    font-size: 50rem;
+  }
 
-    p{
-        font-size: 18rem;   
-        display: block;
-        width: 613rem;
-        /* background-color: yellow; */
-        
-    }
+  p {
+    font-size: 18rem;
+    display: block;
+    width: 613rem;
+    /* background-color: yellow; */
+  }
 
-    .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-  
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-  
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-    }
-    
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-    @media (max-width: 750px) {
-        p{  
-            padding: 0 12rem;
-            width: auto;
-        }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 750px) {
+    p {
+      padding: 0 12rem;
+      width: auto;
     }
+  }
+`;
 
-`
-
-export default SGallery
+export default SGallery;

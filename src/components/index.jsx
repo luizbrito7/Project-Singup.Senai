@@ -9,16 +9,15 @@ import Singles from "./singles";
 import News from "./news";
 import Footer from "./footer";
 
-
 export {
-    Header,
-    Hero,
-    Button,
-    Modal,
-    Albuns,
-    Artists,
-    Gallery,
-    Singles,
-    News,
-    Footer
-}
+  Header,
+  Hero,
+  Button,
+  Modal,
+  Albuns,
+  Artists,
+  Gallery,
+  Singles,
+  News,
+  Footer,
+};

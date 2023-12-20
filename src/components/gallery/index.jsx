@@ -1,28 +1,28 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import * as img from '../../assets/gallery';
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import * as img from "../../assets/gallery";
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-import SGallery from './style';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import SGallery from "./style";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function Gallery() {
-  return (  
+  return (
     <SGallery>
-
-      
       <h2>Galeria</h2>
-      <p>A música é a maneira de expressar suas emoções e aquilo que você gostou mais na vida – é uma das partes mais importantes de nossas vidas.</p>
-      
+      <p>
+        A música é a maneira de expressar suas emoções e aquilo que você gostou
+        mais na vida – é uma das partes mais importantes de nossas vidas.
+      </p>
 
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -50,19 +50,18 @@ export default function Gallery() {
           <img src={img.galleryFive} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallerySix}/>
+          <img src={img.gallerySix} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.gallerySeven}/>
+          <img src={img.gallerySeven} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.galleryEight}/>
+          <img src={img.galleryEight} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img.galleryNine}/>
+          <img src={img.galleryNine} />
         </SwiperSlide>
       </Swiper>
-
     </SGallery>
   );
 }

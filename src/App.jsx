@@ -1,17 +1,18 @@
-import { Header, Footer } from "./components"
-import { Outlet } from "react-router-dom"
+import { Header, Footer } from "./components";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-      <Header logo='SingUp'/>
-      <Outlet/>
+      <Header logo="SingUp" />
+      <Outlet />
 
-      <a className="toTop" href="#top">➤</a>
-      <Footer/>
+      <a className="toTop" href="#top">
+        ➤
+      </a>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
