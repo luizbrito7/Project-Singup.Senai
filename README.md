@@ -52,3 +52,8 @@ A plataforma SingUp foi meticulosamente concebida como parte integrante do curso
 
  
 </table>
+
+
+
+
+### CodeQL test PR 
